@@ -2,14 +2,25 @@ import Contact from 'components/contact'
 import Container from 'components/container'
 // import Social from 'components/social'
 import Hero from 'components/hero'
+import Image from 'next/image'
+import eyecatch from 'images/about3.jpg'
 import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from 'components/two-column'
 
 export default function About() {
     return (
      <Container>
          <Hero 
-         title = "About"
+         title = "About Us"
          subtitle = "Future and Imagination"/>
+         <figure>
+          <Image
+          src={eyecatch}
+          alt=""
+          layout="responsive"
+          sizes="(min-width: 1152px) 1152px, 100vw"
+          placeholder='blur'
+          />
+         </figure>
          <TwoColumn>
          <TwoColumnMain>
          <post-body>
