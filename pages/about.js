@@ -1,6 +1,6 @@
 import Contact from 'components/contact'
+import Meta from 'components/meta'
 import Container from 'components/container'
-// import Social from 'components/social'
 import Hero from 'components/hero'
 import Image from 'next/image'
 import eyecatch from 'images/about3.jpg'
@@ -9,6 +9,7 @@ import { TwoColumn, TwoColumnMain, TwoColumnSidebar } from 'components/two-colum
 export default function About() {
     return (
      <Container>
+      <Meta pageTitle="About Us" />
          <Hero 
          title = "About Us"
          subtitle = "Future and Imagination"/>
