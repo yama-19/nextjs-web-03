@@ -1,6 +1,7 @@
 import Contact from 'components/contact'
 import Meta from 'components/meta'
 import Container from 'components/container'
+import Accordion from 'components/accordion'
 import Hero from 'components/hero'
 import Image from 'next/image'
 import eyecatch from 'images/about3.jpg'
@@ -39,7 +40,36 @@ export default function About() {
             私たちは、テクノロジーを使って生活を向上させることに情熱を注いでおり、
             ポジティブな変化をもたらすためにIoTとITの可能性を最大限に追求することを約束します。
             テクノロジーをあなたのために役立てるという私たちのミッションに参加し、
-            私たちの製品の楽しさをご自身で体験してください。</p>
+            私たちの製品の楽しさをご自身で体験してください。</p><br/>
+            <h2>FAQ</h2>
+            <Accordion heading="顧客からのフィードバックについて">
+               <p>アンケート、カスタマーサポートポータル、電子メールなどを通じて、
+                  お客様からフィードバックをいただいたり、質問を収集することができます。
+               </p>
+            </Accordion>
+            <Accordion heading="サポートチケットについて">
+               <p>
+               カスタマーサポートチケットを発行し、繰り返し発生する質問や問題を特定します。
+               </p>
+            </Accordion>
+            <Accordion heading="フォーカス・グループについて">
+               <p>
+               フォーカスグループを組織して、お客様から直接情報を収集し、
+               FAQがカバーすべきトピックについてお客様の意見を収集します。
+               </p>
+            </Accordion>
+            <Accordion heading="ソーシャルメディアについて">
+               <p>
+               ソーシャルメディアのプラットフォームをモニターし、
+               お客様から寄せられた一般的な質問や懸念を確認します。
+               </p>
+            </Accordion>            
+            <Accordion heading="ウェブサイト分析について">
+               <p>
+               ウェブサイト解析を使用して、どのページや情報が頻繁に訪問されているかを追跡し、
+               ユーザーがより明確にする必要がある領域を特定します。
+               </p>
+            </Accordion>
         </post-body>
         </TwoColumnMain>
         <TwoColumnSidebar>
