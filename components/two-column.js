@@ -1,5 +1,6 @@
 import styles from "styles/two-column.module.css";
 
+// アバウトページ、採用情報ページ用のサイドバー
 export function TwoColumn({ children }) {
     return (
         <div className={styles.flexContainer}>

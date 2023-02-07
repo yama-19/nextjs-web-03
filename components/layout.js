@@ -3,13 +3,13 @@ import Header from 'components/header'
 import Footer from 'components/footer'
 
 export default function Layout({ children }) {
-return (
+  return (
     <>
-    <Header />
+      <Header />
       <main>
         <Container>{children}</Container>
       </main>
-    <Footer />
+      <Footer />
     </>
-)
+  )
 }

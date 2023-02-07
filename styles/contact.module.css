@@ -1,5 +1,11 @@
-.stack > * + * {
+.stack>*+* {
     margin-top: var(--stack-space, 0em);
+}
+
+.email {
+    margin-bottom: auto;
+    text-decoration: underline;
+    text-decoration-color: #333
 }
 
 .heading {

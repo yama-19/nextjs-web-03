@@ -1,17 +1,21 @@
 import Container from 'components/container'
 import Logo from 'components/logo'
 import styles from 'styles/footer.module.css'
-import Social from './social'
+import Social from 'components/social'
 
 export default function Footer() {
-    return (
+  return (
     <footer className={styles.wrapper}>
+      <hr />
       <Container>
-       <div className={styles.flexContainer}>
-         <Logo />
+        <div className={styles.flexContainer}>
+          <Logo />
+          {/* フッターにソーシャルアイコンを設定する */}
           <Social />
-       </div>
+          {/* コピーライトを記載 */}
+          <small className={styles.footerCopy}> Copyright ©2023ex_ample Inc.</small>
+        </div>
       </Container>
     </footer>
-    )
+  )
 }

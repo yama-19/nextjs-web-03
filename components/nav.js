@@ -11,9 +11,9 @@ export default function Nav() {
     setNavIsOpen(false)
   }
 
-    return (
-      <nav className={navIsOpen ? styles.open : styles.close}>
-        {navIsOpen && (
+  return (
+    <nav className={navIsOpen ? styles.open : styles.close}>
+      {navIsOpen && (
         <style jsx global>{`
           @media (max-width: 767px) {
             body {
@@ -23,28 +23,28 @@ export default function Nav() {
             }
           }
       `}</style>
-    )}
-        <button className={styles.btn} onClick={toggleNav}>
+      )}
+      <button className={styles.btn} onClick={toggleNav}>
         <span className={styles.bar}></span>
         <span className="sr-only">MENU</span>
-        </button>
-        <ul className={styles.list}>
+      </button>
+      <ul className={styles.list}>
         <li>
-                <Link href="/">
-                 <a onClick={closeNav}>Home</a>
-                </Link>
-            </li>
-            <li>
-                <Link href="/about">
-                <a onClick={closeNav}>About</a>
-                </Link>
-            </li>
-            <li>
-                <Link href="/recruit">
-                <a onClick={closeNav}>Recruit</a>
-                </Link>
-            </li>
-        </ul>
-      </nav>
-    )
+          <Link href="/">
+            <a onClick={closeNav}>Home</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/about">
+            <a onClick={closeNav}>About</a>
+          </Link>
+        </li>
+        <li>
+          <Link href="/recruit">
+            <a onClick={closeNav}>採用情報</a>
+          </Link>
+        </li>
+      </ul>
+    </nav>
+  )
 }
