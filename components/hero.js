@@ -1,6 +1,6 @@
 import styles from 'styles/hero.module.css'
 import Image from 'next/image'
-import hero from 'images/hero.jpg'
+import eyecatch from 'images/tokyobright.jpg'
 
 // ヒーロー部分に画像を設定する。
 export default function Hero({ title, subtitle, imageOn = false }) {
@@ -13,8 +13,8 @@ export default function Hero({ title, subtitle, imageOn = false }) {
       {imageOn && (
         <figure className={styles.image}>
           <Image
-            src={hero}
-            alt=""
+            src={eyecatch}
+            alt="画像"
             layout="responsive"
             sizes='(min-width: 1152) 576px,(min-width: 768) 50vw, 100vw'
           />
