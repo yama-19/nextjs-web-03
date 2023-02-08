@@ -14,7 +14,7 @@ export default function Nav() {
   return (
     <nav className={navIsOpen ? styles.open : styles.close}>
       {navIsOpen && (
-        <style jsx global>{`
+        <style>{`
           @media (max-width: 767px) {
             body {
               overflow: hidden;
