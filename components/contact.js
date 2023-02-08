@@ -10,7 +10,9 @@ export default function Contact() {
             <p><a className={styles.email} href="mailto:in_fo&#64;ex_ample.c0m">in_fo&#64;ex_ample.c0m</a></p>
 
             {/* ソーシャルアイコンを設定 */}
+            <div className={styles.contactSocial}>
             <Social iconSize="30px" />
+            </div>
             <br />
         </div>
     )

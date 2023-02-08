@@ -11,3 +11,10 @@
 .heading {
     font-size: var(--body);
 }
+
+/* フッターにもアイコンがあるのでモバイル時は表示しない */
+@media screen and (max-width: 768px) {
+    .contactSocial {
+        display: none;
+    }
+}
